@@ -1,29 +1,20 @@
-import "./App.css";
-import React, { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
-import { Link } from "react-router-dom";
+import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowLeft,
-  faCircleQuestion,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 
-const App = () => {
+const Header = () => {
   return (
     <StyledWrapper>
-      <Link to={"#"}>
-        <FontAwesomeIcon icon={faArrowLeft} />
-      </Link>
+      <Icon to="/" ><FontAwesomeIcon icon={faArrowLeft} /></Icon>
       <span>그룹</span>
-      <Link to={"#"}>
-        <FontAwesomeIcon icon={faCircleQuestion} />
-      </Link>
+      <Icon to="/" ><FontAwesomeIcon icon={faCircleQuestion} /></Icon>
     </StyledWrapper>
   );
 };
 
-export default App;
+export default Header;
 
 const StyledWrapper = styled.div`
   width: 720px;
@@ -37,4 +28,9 @@ const StyledWrapper = styled.div`
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 60px 600px 60px);
+`;
+
+const Icon = styled(Link)`
+  color: #996633;
+  text-decoration: none;
 `;
