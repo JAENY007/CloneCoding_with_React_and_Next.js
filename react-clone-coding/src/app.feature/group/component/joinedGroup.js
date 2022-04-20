@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 const JoinedGroup = () => {
   return(
-    
+    <GroupBox>
+      
+    </GroupBox>
   );
 }
 
