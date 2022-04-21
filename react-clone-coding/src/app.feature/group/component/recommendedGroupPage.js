@@ -19,7 +19,10 @@ const RecommendedGroupPage = () => {
       <StyledTitleText>추천그룹</StyledTitleText>
       </StyledTitle>
       <StyledContainer>
-        <StyledLocation/><StyledLocation/><StyledLocation/><StyledLocation/><StyledLocation/>
+        <MiniCardRecommend/>
+        <MiniCardRecommend/>
+        <MiniCardRecommend/>
+        <MiniCardRecommend/>
       </StyledContainer>
     </StyledGroupBox>
   );
@@ -28,7 +31,7 @@ const RecommendedGroupPage = () => {
 export default RecommendedGroupPage;
 
 const StyledGroupBox = styled.div`
-  width: 720px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -49,20 +52,14 @@ const StyledTitleText = styled.strong`
   font-size : 20px;
 `;
 
-const StyledLink = styled(Link)`
-  color: #c2c2c2;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-`;
-
 const StyledContainer = styled.div`
-  width: 720px;
-  overflow: scroll;
+  width: 680px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 340px 340px);
+  overflow: hidden;
 `;
 
-const StyledLocation = styled(MiniCardRecommend)`
-  float: left;
-`

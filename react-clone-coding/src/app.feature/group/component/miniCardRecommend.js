@@ -7,7 +7,7 @@ const MiniCardRecommend = () => {
   return(
     <StyledLink to={"/"}>
       <StyledWrapper>
-        <StyledImage src="http://placeimg.com/330/330/any"/>
+        <StyledImage src="http://placeimg.com/320/320/any"/>
         <StyledTitle>
           <StyledTitleText>QA_리워드형그룹_그룹_리워드형그룹이ㅏㅇㄴ랑ㄴ라ㅣㅓ</StyledTitleText>
         </StyledTitle>
@@ -31,7 +31,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  width: 330px;
+  width: 320px;
   height: 25px;
   margin-top: 10px;
   overflow: hidden;
