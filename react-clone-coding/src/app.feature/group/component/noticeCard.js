@@ -6,6 +6,8 @@ const NoticeCard = () => {
   return(
     <StyledWrapper>
       <StyledImageBox><CardImage /></StyledImageBox>
+      <StyledInfo>
+      </StyledInfo>
     </StyledWrapper>
   );
 }
@@ -13,8 +15,8 @@ const NoticeCard = () => {
 export default NoticeCard;
 
 const StyledWrapper = styled.div`
-  width: 720px;
-  height: 900px;
+  width: 100%;
+  height: 32em;
   margin-left: auto;
   margin-right: auto;
 `;
@@ -22,4 +24,10 @@ const StyledWrapper = styled.div`
 const StyledImageBox = styled.div`
   display: flex;
   overflow: scroll;
+`;
+
+const StyledInfo = styled.div`
+  width: 100%;
+  height: 10em;
+  margin-top: 1em;
 `;

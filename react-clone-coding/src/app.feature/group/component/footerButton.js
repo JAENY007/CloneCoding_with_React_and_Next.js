@@ -6,7 +6,7 @@ import styled from "styled-components";
 const FooterButton = () => {
   return(
     <StyledWrapper>
-      <StyledButton><StyledLink to={"#"}>새로고침</StyledLink></StyledButton>
+      <StyledButton><StyledLink to={"/Feed"}>새로고침</StyledLink></StyledButton>
     </StyledWrapper>
   );
 }
@@ -14,9 +14,10 @@ const FooterButton = () => {
 export default FooterButton;
 
 const StyledWrapper = styled.div`
-  width: 720px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
   text-align: center;
 `;
 

@@ -16,28 +16,24 @@ export default FilterBar;
 
 
 const StyledTitleBox = styled.div`
-  width: 680px;
+  width: 100%;
   line-height: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: none;
-  display: grid;
-  grid-template-columns: repeat(2, 612px 68px);
+  display: flex;
+  justify-content: space-between;
 `;
 
 const StyledTitle = styled.span`
   color: #969696;
   font-weight: bold;
+  margin-left: 1em;
 `;
 
 const StyledButtonImg = styled.button`
-  width: 80px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 5em;
+  height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
   text-align: center;
   border: 1px solid #c2c2c2;
   border-radius: 5px;

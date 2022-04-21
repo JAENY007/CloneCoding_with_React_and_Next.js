@@ -42,8 +42,8 @@ const StyledTitle = styled.div`
   line-height: 20px;
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
   display: flex;
   justify-content: space-between;
 `;

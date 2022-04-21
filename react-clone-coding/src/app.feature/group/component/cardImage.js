@@ -23,6 +23,6 @@ const CardImage = () => {
 export default CardImage;
 
 const StyledImage = styled.img`
-  width: 720px;
-  height: 540px;
+  width: 100%;
+  height: 100%;
 `;
