@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const MiniCard = () => {
+const MiniCardRecommend = () => {
 
   return(
     <StyledLink to={"/"}>
       <StyledWrapper>
-        <StyledImage src="http://placeimg.com/300/300/any"/>
+        <StyledImage src="http://placeimg.com/330/330/any"/>
         <StyledTitle>
           <StyledTitleText>QA_리워드형그룹_그룹_리워드형그룹이ㅏㅇㄴ랑ㄴ라ㅣㅓ</StyledTitleText>
         </StyledTitle>
@@ -17,7 +17,7 @@ const MiniCard = () => {
   );
 }
 
-export default MiniCard;
+export default MiniCardRecommend;
 
 const StyledImage = styled.img`
   border-radius: 10px;
@@ -31,7 +31,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  width: 300px;
+  width: 330px;
   height: 25px;
   margin-top: 10px;
   overflow: hidden;

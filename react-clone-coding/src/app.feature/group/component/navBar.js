@@ -38,4 +38,9 @@ const StyledMenu = styled(Link)`
   color: #c2c2c2;
   font-weight: bold;
   font-size: 18px;
+  text-decoration: none;
+
+  &:visited {
+    border-bottom: 2px solid brown;
+  }
 `;

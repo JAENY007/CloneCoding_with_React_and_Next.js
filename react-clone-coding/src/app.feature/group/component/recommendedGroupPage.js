@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import MiniCard from "./miniCard";
+import MiniCardRecommend from "./miniCardRecommend";
 
-const JoinedGroupPage = () => {
+const RecommendedGroupPage = () => {
 
   const CardLocation = () => {
     let result;
     for (let i = 1; i < 12; i ++) {
-      result += <MiniCard />
+      result += <MiniCardRecommend />
     }
     return result;
   }
@@ -16,37 +16,33 @@ const JoinedGroupPage = () => {
   return(
     <StyledGroupBox>
       <StyledTitle>
-      <StyledTitleText>내가 가입한 그룹</StyledTitleText>
-      <StyledLink to={"/"}>더보기</StyledLink>
+      <StyledTitleText>추천그룹</StyledTitleText>
       </StyledTitle>
       <StyledContainer>
-        <MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/>
+        <StyledLocation/><StyledLocation/><StyledLocation/><StyledLocation/><StyledLocation/>
       </StyledContainer>
     </StyledGroupBox>
   );
 }
 
-export default JoinedGroupPage;
+export default RecommendedGroupPage;
 
 const StyledGroupBox = styled.div`
-  width: 700px;
+  width: 720px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #c2c2c2;
 `;
 
 const StyledTitle = styled.div`
-  width: 680px;
+  width: 700px;
   line-height: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 612px 68px);
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const StyledTitleText = styled.strong`
@@ -58,10 +54,15 @@ const StyledLink = styled(Link)`
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  text-decoration: none;
 `;
 
 const StyledContainer = styled.div`
+  width: 720px;
   overflow: scroll;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 `;
+
+const StyledLocation = styled(MiniCardRecommend)`
+  float: left;
+`
