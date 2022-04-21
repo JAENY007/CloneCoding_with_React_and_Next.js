@@ -18,8 +18,8 @@ export default NavBar;
 const StyledTabMenu = styled.ul`
   height: auto;
   border-bottom: 1px solid #c2c2c2;
-  display: grid;
-  grid-template-columns: repeat(2, 360px 360px);
+  display: flex;
+  justify-content: space-around;
   text-align: center;
   padding-left: 0;
   margin-top: 0;
@@ -27,7 +27,7 @@ const StyledTabMenu = styled.ul`
 `;
 
 const StyledNavigation = styled.nav`
-  width: 720px;
+  width: 100%;
   line-height: 50px;
   background: white;
   margin-left: auto;

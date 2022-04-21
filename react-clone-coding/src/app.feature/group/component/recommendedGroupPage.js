@@ -5,24 +5,21 @@ import MiniCardRecommend from "./miniCardRecommend";
 
 const RecommendedGroupPage = () => {
 
-  const CardLocation = () => {
-    let result;
-    for (let i = 1; i < 12; i ++) {
-      result += <MiniCardRecommend />
+  const View = () => {
+    let arrayCard = [];
+    for (let i = 1; i < 5; i ++) {
+      arrayCard.push(<MiniCardRecommend />)
     }
-    return result;
+    return arrayCard;
   }
 
   return(
     <StyledGroupBox>
       <StyledTitle>
-      <StyledTitleText>추천그룹</StyledTitleText>
+      <StyledTitleText>추천 그룹</StyledTitleText>
       </StyledTitle>
       <StyledContainer>
-        <MiniCardRecommend/>
-        <MiniCardRecommend/>
-        <MiniCardRecommend/>
-        <MiniCardRecommend/>
+        {View()}
       </StyledContainer>
     </StyledGroupBox>
   );
@@ -31,21 +28,15 @@ const RecommendedGroupPage = () => {
 export default RecommendedGroupPage;
 
 const StyledGroupBox = styled.div`
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 20px;
+  width: 100%;
 `;
 
 const StyledTitle = styled.div`
-  width: 700px;
+  width: 100%;
   line-height: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
 `;
 
 const StyledTitleText = styled.strong`
@@ -53,13 +44,10 @@ const StyledTitleText = styled.strong`
 `;
 
 const StyledContainer = styled.div`
-  width: 680px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 340px 340px);
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: scroll;
 `;
 

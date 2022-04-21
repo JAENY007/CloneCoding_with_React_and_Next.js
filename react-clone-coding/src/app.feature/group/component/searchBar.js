@@ -15,7 +15,7 @@ const SearchBar = () => {
 export default SearchBar;
 
 const StyledInputBox = styled.form`
-  width: 680px;
+  width: 90%;
   line-height: 40px;
   font-weight: bold;
   margin-top: 20px;
@@ -27,8 +27,7 @@ const StyledInputBox = styled.form`
   display: block;
   border: 1px solid #c2c2c2;
   border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 612px 68px);
+  display: flex;
 `;
 
 const StyledInput = styled.input`
@@ -52,10 +51,6 @@ const StyledInput = styled.input`
 `;
 
 const StyledButtonImg = styled.button`
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: auto;
-  margin-right: 10px;
   text-align: center;
   border: none;
   background: none;

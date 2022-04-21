@@ -2,16 +2,23 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const MiniCardRecommend = () => {
 
+const ImageForCard = "http://placeimg.com/320/320/any";
+
+const Title = {
+  title : 'QA_리워드형그룹_그룹_리워드형그룹이ㅏㅇㄴ랑ㄴ라ㅣㅓ',
+  subTitle : '6명 참여중'
+};
+
+const MiniCardRecommend = () => {
   return(
     <StyledLink to={"/"}>
       <StyledWrapper>
-        <StyledImage src="http://placeimg.com/320/320/any"/>
+        <StyledImage src={ImageForCard}/>
         <StyledTitle>
-          <StyledTitleText>QA_리워드형그룹_그룹_리워드형그룹이ㅏㅇㄴ랑ㄴ라ㅣㅓ</StyledTitleText>
+          <StyledTitleText>{Title.title}</StyledTitleText>
         </StyledTitle>
-          <StyledSubTitle>6명 참여중</StyledSubTitle>
+          <StyledSubTitle>{Title.subTitle}</StyledSubTitle>
       </StyledWrapper>
     </StyledLink>
   );
@@ -20,20 +27,23 @@ const MiniCardRecommend = () => {
 export default MiniCardRecommend;
 
 const StyledImage = styled.img`
+  width: 12em;
   border-radius: 10px;
   border: none;
 `;
 
 const StyledWrapper = styled.div`
+  width: 12em;
+  height: 18em;
   overflow: hidden;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 0.2em;
 `;
 
 const StyledTitle = styled.div`
-  width: 320px;
-  height: 25px;
+  width: 100%;
+  height: 1.6em;
   margin-top: 10px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
@@ -48,7 +58,7 @@ const StyledSubTitle = styled.p`
   color: #c2c2c2;
   font-size : 16px;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 0.4em;
 `;
 
 const StyledLink = styled(Link)`

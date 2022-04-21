@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import MiniCard from "./miniCard";
 
 const JoinedGroupPage = () => {
-
-  const CardLocation = () => {
-    let result;
+  
+  const View = () => {
+    let arrayCard = [];
     for (let i = 1; i < 12; i ++) {
-      result += <MiniCard />
+      arrayCard.push(<MiniCard />)
     }
-    return result;
+    return arrayCard;
   }
 
   return(
@@ -20,7 +20,7 @@ const JoinedGroupPage = () => {
       <StyledLink to={"/"}>더보기</StyledLink>
       </StyledTitle>
       <StyledContainer>
-        <MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/><MiniCard/>
+        {View()}
       </StyledContainer>
     </StyledGroupBox>
   );
@@ -29,24 +29,23 @@ const JoinedGroupPage = () => {
 export default JoinedGroupPage;
 
 const StyledGroupBox = styled.div`
-  width: 700px;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
-  padding-left: 10px;
   padding-bottom: 20px;
   border-bottom: 1px solid #c2c2c2;
 `;
 
 const StyledTitle = styled.div`
-  width: 680px;
+  width: 90%;
   line-height: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 612px 68px);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const StyledTitleText = styled.strong`
