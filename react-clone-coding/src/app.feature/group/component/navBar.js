@@ -4,18 +4,18 @@ import styled from "styled-components";
 
 const NavBar = () => {
   return (
-    <Navigation>
-      <TabMenu>
-        <Menu to={"/BrowseAllPage"}>모아보기</Menu>
-        <Menu to={"/Feed"}>피드</Menu>
-      </TabMenu>
-    </Navigation>
+    <StyledNavigation>
+      <StyledTabMenu>
+        <StyledMenu to={"/BrowseAllPage"}>모아보기</StyledMenu>
+        <StyledMenu to={"/Feed"}>피드</StyledMenu>
+      </StyledTabMenu>
+    </StyledNavigation>
   );
 };
 
 export default NavBar;
 
-const TabMenu = styled.ul`
+const StyledTabMenu = styled.ul`
   height: auto;
   border-bottom: 1px solid #c2c2c2;
   display: grid;
@@ -26,7 +26,7 @@ const TabMenu = styled.ul`
   margin-bottom: 0;
 `;
 
-const Navigation = styled.nav`
+const StyledNavigation = styled.nav`
   width: 720px;
   line-height: 50px;
   background: white;
@@ -34,7 +34,7 @@ const Navigation = styled.nav`
   margin-right: auto;
 `;
 
-const Menu = styled(Link)`
+const StyledMenu = styled(Link)`
   color: #c2c2c2;
   font-weight: bold;
   font-size: 18px;

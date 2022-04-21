@@ -4,12 +4,12 @@ import NavBar from "../component/navBar";
 
 
 const MainPage = (props) => 
-  <PageBox>
+  <StyledWrapper>
     {props.children}
-  </PageBox>;
+  </StyledWrapper>;
 
 export default MainPage;
 
-const PageBox = styled.div`
+const StyledWrapper = styled.div`
   background: white;
 `;

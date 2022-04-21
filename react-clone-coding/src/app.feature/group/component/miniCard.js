@@ -1,16 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 
 const MiniCard = () => {
+  static
+
   return(
     <div>
-      <Image src="http://placeimg.com/300/300/any"/>
+      <StyledImage src="http://placeimg.com/300/300/any"/>
     </div>
   );
 }
 
-const Image = styled.img`
-  overflow: hidden;
+const StyledImage = styled.img`
   border-radius: 10px;
   border: none;
 `;

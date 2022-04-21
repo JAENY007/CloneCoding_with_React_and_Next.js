@@ -5,16 +5,16 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const SearchBar = () => {
   return (
-      <InputBox>
-        <Input placeholder="총 11개의 그룹이 개설되어 있습니다."></Input>
-        <ButtonImg><FontAwesomeIcon icon={faMagnifyingGlass} /></ButtonImg>
-      </InputBox>
+      <StyledInputBox>
+        <StyledInput placeholder="총 11개의 그룹이 개설되어 있습니다."></StyledInput>
+        <StyledButtonImg><FontAwesomeIcon icon={faMagnifyingGlass} /></StyledButtonImg>
+      </StyledInputBox>
   );
 };
 
 export default SearchBar;
 
-const InputBox = styled.form`
+const StyledInputBox = styled.form`
   width: 680px;
   line-height: 40px;
   font-weight: bold;
@@ -31,7 +31,7 @@ const InputBox = styled.form`
   grid-template-columns: repeat(2, 612px 68px);
 `;
 
-const Input = styled.input`
+const StyledInput = styled.input`
   width: 100%;
   line-height: 40px;
   font-weight: bold;
@@ -51,7 +51,7 @@ const Input = styled.input`
   }
 `;
 
-const ButtonImg = styled.button`
+const StyledButtonImg = styled.button`
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: auto;

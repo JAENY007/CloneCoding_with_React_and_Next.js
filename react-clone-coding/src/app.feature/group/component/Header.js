@@ -7,9 +7,9 @@ import { faArrowLeft, faCircleQuestion } from "@fortawesome/free-solid-svg-icons
 const Header = () => {
   return (
     <StyledWrapper>
-      <Icon to="/" ><FontAwesomeIcon icon={faArrowLeft} /></Icon>
+      <StyledIcon to="/" ><FontAwesomeIcon icon={faArrowLeft} /></StyledIcon>
       <span>그룹</span>
-      <Icon to="/" ><FontAwesomeIcon icon={faCircleQuestion} /></Icon>
+      <StyledIcon to="/" ><FontAwesomeIcon icon={faCircleQuestion} /></StyledIcon>
     </StyledWrapper>
   );
 };
@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
   grid-template-columns: repeat(3, 60px 600px 60px);
 `;
 
-const Icon = styled(Link)`
+const StyledIcon = styled(Link)`
   color: #996633;
   text-decoration: none;
 `;

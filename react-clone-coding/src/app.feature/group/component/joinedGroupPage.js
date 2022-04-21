@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const JoinedGroup = () => {
+const JoinedGroupPage = () => {
   return(
-    <GroupBox>
+    <StyledGroupBox>
       
-    </GroupBox>
+    </StyledGroupBox>
   );
 }
 
-const GroupBox = styled.div`
+export default JoinedGroupPage;
+
+const StyledGroupBox = styled.div`
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 20px;
