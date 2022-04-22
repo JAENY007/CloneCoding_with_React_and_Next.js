@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import AccountInfo from "./AccountInfo";
 import CardImage from "./CardImage";
+import ImportantMesseage from "./ImportantMessage";
 import NoticeText from "./NoticeText";
 import ShortenInfo from "./ShortenInfo";
 
@@ -14,6 +15,7 @@ const NoticeCard = () => {
         <ShortenInfo />
       </StyledInfo>
       <NoticeText />
+      <ImportantMesseage />
     </StyledWrapper>
   );
 }
