@@ -2,51 +2,15 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const MiniCard = () => {
-
-  const ImageSrc = [
-    "http://placeimg.com/300/300/animals",
-    "http://placeimg.com/300/300/architecture",
-    "http://placeimg.com/300/300/nature",
-    "http://placeimg.com/300/300/people",
-    "http://placeimg.com/300/300/tech"
-  ];
-
-  const Title = [
-    "QA_리워드형그룹_그룹_가나다라마바사",
-    "QA_리워드형그룹_그룹_ABCDEFGHIJ",
-    "QA_리워드형그룹_그룹_IIIIIIIVVVI",
-    "QA_리워드형그룹_그룹_ONETWOTHREE",
-    "QA_리워드형그룹_그룹_아야어여오요우유",
-    "QA_리워드형그룹_그룹_하나둘셋넷다섯여"
-  ];
-
-  const SubTitle = [
-    "0명 참여중",
-    "1명 참여중",
-    "10명 참여중",
-    "100명 참여중",
-    "1000명 참여중",
-    "너무 많이 참여중"
-  ];
-
-  const randomValueFromArray = (array) => {
-    const random = Math.floor(Math.random() * Array.length);
-    return array[random];
-  }
-
-  let ImageForCard = randomValueFromArray(ImageSrc);
-  let TitleText = randomValueFromArray(Title);
-  let SubTitleText = randomValueFromArray(SubTitle);
-
+const MiniCard = (props) => {
   return(
     <StyledLink to={"/"}>
       <StyledWrapper>
-        <StyledImage src={ImageForCard}/>
+        <StyledImage src={props.ImageSrc}/>
         <StyledTitle>
-          <StyledTitleText>{TitleText}</StyledTitleText>
+          <StyledTitleText>{props.Title}</StyledTitleText>
         </StyledTitle>
-          <StyledSubTitle>{SubTitleText}</StyledSubTitle>
+          <StyledSubTitle>{props.SubTitle}</StyledSubTitle>
       </StyledWrapper>
     </StyledLink>
   );

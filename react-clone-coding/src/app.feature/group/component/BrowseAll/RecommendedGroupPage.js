@@ -1,16 +1,35 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import MiniCardRecommend from "./MiniCardRecommend";
 
 const RecommendedGroupPage = () => {
 
-  const View = () => {
-    let arrayCard = [];
-    for (let i = 1; i < 5; i ++) {
-      arrayCard.push(<MiniCardRecommend />)
+  const Random = [
+    {
+      id: 1,
+      imageSrc: "http://placeimg.com/320/320/animals",
+      title: "QA_리워드형그룹_그룹_가나다라마바사",
+      subTitle: "0명 참여중"
+    },
+    {
+      id: 2,
+      imageSrc: "http://placeimg.com/320/320/architecture",
+      title: "QA__가나다라마바사__리워드_NEED",
+      subTitle: "10명 참여중"
+    },
+    {
+      id: 3,
+      imageSrc: "http://placeimg.com/320/320/nature",
+      title: "QA_ABCDEFG_IIIIIIIVVVIVII",
+      subTitle: "32명 참여중"
+    },
+    {
+      id: 4,
+      imageSrc: "http://placeimg.com/320/320/people",
+      title: "QA_123456789_안녕하세요",
+      subTitle: "5명 참여중"
     }
-    return arrayCard;
-  }
+  ];
 
   return(
     <StyledGroupBox>
@@ -18,7 +37,22 @@ const RecommendedGroupPage = () => {
       <StyledTitleText>추천 그룹</StyledTitleText>
       </StyledTitle>
       <StyledContainer>
-        {View()}
+        <MiniCardRecommend
+        ImageSrc={Random[0].imageSrc}
+        Title={Random[0].title}
+        SubTitle={Random[0].subTitle} />
+        <MiniCardRecommend
+        ImageSrc={Random[1].imageSrc}
+        Title={Random[1].title}
+        SubTitle={Random[1].subTitle} />
+        <MiniCardRecommend
+        ImageSrc={Random[2].imageSrc}
+        Title={Random[2].title}
+        SubTitle={Random[2].subTitle} />
+        <MiniCardRecommend
+        ImageSrc={Random[3].imageSrc}
+        Title={Random[3].title}
+        SubTitle={Random[3].subTitle} />
       </StyledContainer>
     </StyledGroupBox>
   );
