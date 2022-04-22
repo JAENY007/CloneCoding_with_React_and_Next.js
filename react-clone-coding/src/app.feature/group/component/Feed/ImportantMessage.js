@@ -16,7 +16,7 @@ const ImportantMesseage = () => {
 export default ImportantMesseage;
 
 const StyledWrapper = styled.div`
-  width: 100%;
+  width: 90%;
   margin-top: 1.5em;
   padding: 1em;
   font-size: 0.8em;

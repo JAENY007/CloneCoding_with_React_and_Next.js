@@ -41,7 +41,7 @@ const StyledMenu = styled(Link)`
   text-decoration: none;
   border-bottom: 1px solid #f2f2f2;
 
-  &:focus {
+  &:focus  {
     border-bottom: 3px solid #5c2e2b;
   }
 `;
