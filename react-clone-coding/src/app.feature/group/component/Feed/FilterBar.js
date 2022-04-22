@@ -17,12 +17,13 @@ export default FilterBar;
 
 const StyledTitleBox = styled.div`
   width: 100%;
-  line-height: 60px;
+  line-height: 4em;
   display: flex;
   justify-content: space-between;
 `;
 
 const StyledTitle = styled.span`
+  font-size: 1.1em;
   color: #969696;
   font-weight: bold;
   margin-left: 1em;
@@ -39,7 +40,7 @@ const StyledButtonImg = styled.button`
   border-radius: 5px;
   background: none;
   color: #969696;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
 `;
 
