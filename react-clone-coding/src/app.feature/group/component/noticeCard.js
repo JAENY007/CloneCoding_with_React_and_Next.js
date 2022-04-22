@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CardImage from "./cardImage";
+import CardImage from "./CardImage";
 
 const NoticeCard = () => {
   return(

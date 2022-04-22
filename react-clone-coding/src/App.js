@@ -3,8 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import BrowseAllPage from "./app.feature/group/component/BrowseAllPage";
 import Feed from "./app.feature/group/component/Feed";
 import Header from "./app.feature/group/component/Header"
-import NavBar from "./app.feature/group/component/navBar";
-import MainPage from "./app.feature/group/screen/mainPage";
+import NavBar from "./app.feature/group/component/NavBar";
+import MainPage from "./app.feature/group/screen/MainPage";
 
 
 function App () {

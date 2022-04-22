@@ -1,7 +1,7 @@
-import MainPage from "../screen/mainPage";
+import MainPage from "../screen/MainPage";
 import FilterBar from "./FilterBar";
-import FooterButton from "./footerButton";
-import NoticeCard from "./noticeCard";
+import FooterButton from "./FooterButton";
+import NoticeCard from "./NoticeCard";
 
 const Feed = () => {
   return(
