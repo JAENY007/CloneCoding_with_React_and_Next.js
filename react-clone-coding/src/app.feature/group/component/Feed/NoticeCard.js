@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import AccountInfo from "./AccountInfo";
-import CardImage from "./CardImage";
 import ImportantMesseage from "./ImportantMessage";
 import NoticeText from "./NoticeText";
 import ShortenInfo from "./ShortenInfo";
 
-const NoticeCard = () => {
+const NoticeCard = (props) => {
   return(
     <StyledWrapper>
-      <StyledImageBox><CardImage /></StyledImageBox>
+      <StyledImageBox><StyledImage src={props.ImageSrc} /></StyledImageBox>
       <StyledInfo>
         <AccountInfo/>
         <ShortenInfo />
@@ -40,4 +39,9 @@ const StyledInfo = styled.div`
   width: 100%;
   height: 4em;
   margin-top: 1em;
+`;
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: 100%;
 `;
