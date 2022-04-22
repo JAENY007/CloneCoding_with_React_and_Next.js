@@ -4,16 +4,15 @@ import BrowseAllPage from "./app.feature/group/component/BrowseAllPage";
 import Feed from "./app.feature/group/component/Feed";
 import Header from "./app.feature/group/component/Header"
 import NavBar from "./app.feature/group/component/NavBar";
-import MainPage from "./app.feature/group/screen/MainPage";
+import ScreenMainPage from "./app.feature/group/screen/ScreenMainPage";
 
-
-function App () {
+const App = () => {
   return (
     <React.Fragment>
       <Header />
       <NavBar />
       <Routes>
-        <Route path="/mainPage" element={<MainPage/>} />
+        <Route path="/screenMainPage" element={<ScreenMainPage/>} />
         <Route path="/browseAllPage" element={<BrowseAllPage/>} />
         <Route path="/feed" element={<Feed/>} />
       </Routes>

@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 
-const MainPage = (props) => 
+const ScreenMainPage = (props) => 
   <StyledWrapper>
     {props.children}
   </StyledWrapper>;
 
-export default MainPage;
+export default ScreenMainPage;
 
 const StyledWrapper = styled.div`
   background: white;

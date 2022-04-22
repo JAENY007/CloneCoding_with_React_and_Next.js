@@ -1,15 +1,15 @@
 import SearchBar from "./BrowseAll/SearchBar";
-import MainPage from "../screen/MainPage";
+import ScreenMainPage from "../screen/ScreenMainPage";
 import JoinedGroupPage from "./BrowseAll/JoinedGroupPage";
 import RecommendedGroupPage from "./BrowseAll/RecommendedGroupPage";
 
 const BrowseAllPage = () => {
   return(
-  <MainPage>
+  <ScreenMainPage>
     <SearchBar />
     <JoinedGroupPage />
     <RecommendedGroupPage />
-  </MainPage>
+  </ScreenMainPage>
   );
 };
 

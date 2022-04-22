@@ -1,12 +1,24 @@
-import React from "react";
+import React,{ useState } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 const SearchBar = () => {
+
+  const[searchValue, setSearchValue] = useState("");
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value)
+  }
+
   return (
       <StyledInputBox>
-        <StyledInput placeholder="총 11개의 그룹이 개설되어 있습니다."></StyledInput>
+        <StyledInput
+        type="text"
+        value={searchValue}
+        onChange={handleInputChange}
+        placeholder={"총 11개의 그룹이 개설되어 있습니다."}>
+        </StyledInput>
         <StyledButtonImg><FontAwesomeIcon icon={faMagnifyingGlass} /></StyledButtonImg>
       </StyledInputBox>
   );

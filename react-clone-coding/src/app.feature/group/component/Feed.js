@@ -1,16 +1,16 @@
-import MainPage from "../screen/MainPage";
+import ScreenMainPage from "../screen/ScreenMainPage";
 import FilterBar from "./Feed/FilterBar";
 import FooterButton from "./Feed/FooterButton";
 import NoticeCard from "./Feed/NoticeCard";
 
 const Feed = () => {
   return(
-  <MainPage>
+  <ScreenMainPage>
     <FilterBar />
     <NoticeCard />
     <NoticeCard />
     <FooterButton />
-  </MainPage>
+  </ScreenMainPage>
   );
 };
 
