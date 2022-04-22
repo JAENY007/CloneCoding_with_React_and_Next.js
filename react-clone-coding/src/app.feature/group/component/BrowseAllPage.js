@@ -1,7 +1,7 @@
-import SearchBar from "./SearchBar";
+import SearchBar from "./BrowseAll/SearchBar";
 import MainPage from "../screen/MainPage";
-import JoinedGroupPage from "./JoinedGroupPage";
-import RecommendedGroupPage from "./RecommendedGroupPage";
+import JoinedGroupPage from "./BrowseAll/JoinedGroupPage";
+import RecommendedGroupPage from "./BrowseAll/RecommendedGroupPage";
 
 const BrowseAllPage = () => {
   return(

@@ -17,6 +17,7 @@ const StyledWrapper = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2em;
   margin-bottom: 2em;
   text-align: center;
 `;
