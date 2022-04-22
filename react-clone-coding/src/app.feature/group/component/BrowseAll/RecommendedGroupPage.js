@@ -31,11 +31,12 @@ const StyledGroupBox = styled.div`
 `;
 
 const StyledTitle = styled.div`
-  width: 100%;
+  width: 90%;
   line-height: 20px;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
 `;
 
 const StyledTitleText = styled.strong`

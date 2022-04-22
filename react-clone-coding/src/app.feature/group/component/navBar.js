@@ -17,7 +17,6 @@ export default NavBar;
 
 const StyledTabMenu = styled.ul`
   height: auto;
-  border-bottom: 1px solid #c2c2c2;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -35,12 +34,14 @@ const StyledNavigation = styled.nav`
 `;
 
 const StyledMenu = styled(Link)`
+  width: 100%;
   color: #c2c2c2;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
+  border-bottom: 1px solid #f2f2f2;
 
-  &:visited {
-    border-bottom: 2px solid brown;
+  &:focus {
+    border-bottom: 3px solid #5c2e2b;
   }
 `;

@@ -29,12 +29,12 @@ const JoinedGroupPage = () => {
 export default JoinedGroupPage;
 
 const StyledGroupBox = styled.div`
-  width: 95%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #c2c2c2;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #f2f2f2;
 `;
 
 const StyledTitle = styled.div`

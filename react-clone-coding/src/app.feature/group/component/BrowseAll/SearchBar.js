@@ -25,7 +25,7 @@ const StyledInputBox = styled.form`
   padding-right: 10px;
   font-size: 16px;
   display: block;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #f2f2f2;
   border-radius: 10px;
   display: flex;
 `;
@@ -52,7 +52,8 @@ const StyledInput = styled.input`
 
 const StyledButtonImg = styled.button`
   text-align: center;
+  font-size: 1.2em;
   border: none;
   background: none;
-  color: #c2c2c2;
+  color: #f2f2f2;
 `;
