@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -13,8 +17,59 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+
+      "@FeatTeamwalk/*": [
+        "app.feature/teamwalk/*"
+      ],
+
+      "@FeatFriend/*": [
+        "app.feature/friend/*"
+      ],
+
+      "@FeatUser/*": [
+        "app.feature/user/*"
+      ],
+
+      "app.feature/*": [
+        "app.feature/*"
+      ],
+      "app.components/*": [
+        "app.components/*"
+      ],
+      "app.constants/*": [
+        "app.constants/*"
+      ],
+      "app.modules/*": [
+        "app.modules/*"
+      ],
+      "app.hooks/*": [
+        "app.hooks/*"
+      ],
+      "app.query/*": [
+        "app.query/*"
+      ],
+      "app.store/*": [
+        "app.store/*"
+      ],
+      "app.styled/*": [
+        "app.styled/*"
+      ],
+      "pages/*": [
+        "pages/*"
+      ]
+    },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx"
+  ]
 }
