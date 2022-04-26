@@ -2,13 +2,38 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import styled from 'styled-components';
 import Card from './card';
-import __testCardParameter from '../../../../app.modules/__tests__/__testCardParameter';
+import MiniCard from './miniCard';
 
 const groupPage = (props) => {
-  const CardSize = [
-    { id: 1, size: '50px' },
-    { id: 2, size: '70px' },
-  ];
+  const printCard = () => {
+    if (props.title === '내가 가입한 그룹') {
+      return (
+        <div className="flex-nowrap">
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+        </div>
+      );
+    } else {
+      return (
+        <div className="flex-wrap">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      );
+    }
+  };
+
   return (
     <StyledWrapper>
       <header>
@@ -17,7 +42,7 @@ const groupPage = (props) => {
           <Link href="/joinedgroup">더보기</Link>
         ) : null}
       </header>
-      <div>{props.title === '내가 가입한 그룹' ? null : <Card />}</div>
+      {printCard()}
     </StyledWrapper>
   );
 };
@@ -26,8 +51,8 @@ export default groupPage;
 
 const StyledWrapper = styled.div`
   width: 100%;
-  margin: 0 auto 0 auto;
-  padding: 10px 0 20px 0;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: 1px solid #f2f2f2;
 
   header {
@@ -51,7 +76,18 @@ const StyledWrapper = styled.div`
     }
   }
 
-  div {
-    margin: 10px;
+  .flex-nowrap {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+
+  .flex-wrap {
+    display: flex;
+    overflow: scroll;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 `;

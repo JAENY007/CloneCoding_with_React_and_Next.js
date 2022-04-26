@@ -33,7 +33,7 @@ const StyledWrapper = styled.nav`
     font-size: 18px;
     text-align: center;
     border: none;
-    border-bottom: 2px solid #ececec;
+    border-bottom: 1.5px solid #ececec;
 
     &:focus {
       border-bottom: 3px solid #5c2e2b;
