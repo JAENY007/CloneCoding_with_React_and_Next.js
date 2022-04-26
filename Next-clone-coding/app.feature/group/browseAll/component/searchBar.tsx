@@ -11,13 +11,15 @@ const SearchBar = () => {
     setSearchValue(event.target.value);
   };
 
+  let groupNumber = null;
+
   return (
     <StyledWrapper>
       <input
         type="text"
         value={searchValue}
         onChange={handleInputChange}
-        placeholder={'총 11개의 그룹이 개설되어 있습니다.'}
+        placeholder={`총 ${groupNumber}개의 그룹이 개설되어 있습니다.`}
       ></input>
       <button>
         <FontAwesomeIcon icon={faMagnifyingGlass} />

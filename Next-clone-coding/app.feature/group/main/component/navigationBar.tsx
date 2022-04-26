@@ -1,22 +1,13 @@
 import { NextPage } from 'next';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import styled from 'styled-components';
-import ScreenBrowseAllPage from '../../browseAll/screen/screenBrowseAllPage';
-import ScreenFeed from '../../feed/screen/screenFeed';
 
 const NavigationBar = () => {
-  const router = useRouter();
-
   return (
     <StyledWrapper>
       <ul>
-        <Link href="../../browseAll/screen/screenBrowseAllPage" replace>
-          모아보기
-        </Link>
-        <Link href="/screenFeed" replace>
-          피드
-        </Link>
+        <Link href="/screenbrowseallpage">모아보기</Link>
+        <Link href="/screenfeed">피드</Link>
       </ul>
     </StyledWrapper>
   );

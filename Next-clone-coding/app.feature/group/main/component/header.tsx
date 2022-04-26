@@ -10,13 +10,13 @@ import {
 const Header = () => {
   return (
     <StyledWrapper>
-      <Link href={'#'} passHref>
+      <Link href={'/'} passHref>
         <i>
           <FontAwesomeIcon icon={faArrowLeft} />
         </i>
       </Link>
       <span>그룹</span>
-      <Link href={'#'} passHref>
+      <Link href={'/'} passHref>
         <i>
           <FontAwesomeIcon icon={faCircleQuestion} />
         </i>
