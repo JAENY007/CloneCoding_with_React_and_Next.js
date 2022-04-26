@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import ScreenBrowseAllPage from '../app.feature/group/browseAll/screen/screenbrowseallpage';
+import ScreenBrowseAllPage from '../app.feature/group/browseAll/screen/screenBrowseAllPage';
 
-const screenbrowseallpage = () => {
+const Page_GroupMore = () => {
   return (
     <div>
       <ScreenBrowseAllPage />
@@ -9,4 +9,4 @@ const screenbrowseallpage = () => {
   );
 };
 
-export default screenbrowseallpage;
+export default Page_GroupMore;

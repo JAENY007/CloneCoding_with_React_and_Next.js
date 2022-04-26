@@ -6,8 +6,8 @@ const NavigationBar = () => {
   return (
     <StyledWrapper>
       <ul>
-        <Link href="/screenbrowseallpage">모아보기</Link>
-        <Link href="/screenfeed">피드</Link>
+        <Link href="/more">모아보기</Link>
+        <Link href="/feed">피드</Link>
       </ul>
     </StyledWrapper>
   );

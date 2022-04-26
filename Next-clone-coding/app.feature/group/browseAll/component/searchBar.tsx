@@ -60,6 +60,7 @@ const StyledWrapper = styled.form`
 
     ::placeholder {
       color: #c2c2c2;
+      font-weight: 500;
     }
   }
 
