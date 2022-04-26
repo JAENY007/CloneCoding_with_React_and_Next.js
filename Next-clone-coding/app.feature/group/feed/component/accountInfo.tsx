@@ -15,7 +15,7 @@ export default AccountInfo;
 const StyledWrapper = styled.div`
   padding: 10px;
   line-height: 30px;
-  padding-left: 10px;
+  padding-left: 20px;
   display: inline-block;
 
   img {

@@ -40,7 +40,8 @@ const StyledWrapper = styled.div`
   }
   .InfoBox {
     width: 100%;
-    height: 40px;
+    line-height: 40px;
     margin: 10px 0 0 0;
+    vertical-align: baseline;
   }
 `;

@@ -16,6 +16,8 @@ const StyledWrapper = styled.div`
   font-size: 12px;
   text-align: center;
   display: inline;
+  float: right;
+  padding: 0 20px 0 0;
   .InfoIcon {
     width: 35px;
     line-height: 20px;
