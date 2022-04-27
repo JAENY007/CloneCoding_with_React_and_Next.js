@@ -1,26 +1,18 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
 
 const Card = (props) => {
   return (
     <StyledWrapper>
-      <Link href="/" passHref>
+      <Link href={props.link} passHref>
         <div>
-          <img src="http://placeimg.com/300/300/animals" />
-          <h1>좋은그룹_어서참여부탁드립니다</h1>
-          <pre>여러명 참여중</pre>
+          <img src={props.imageSrc} />
+          <h1>{props.title}</h1>
+          <pre>{props.number}명 참여중</pre>
         </div>
       </Link>
     </StyledWrapper>
-    // <StyledWrapper>
-    //   <Link href={props.link} passHref>
-    //     <Image src={props.imageSrc} />
-    //     <h1>{props.title}</h1>
-    //     <pre>{props.number}명 참여중</pre>
-    //   </Link>
-    // </StyledWrapper>
   );
 };
 

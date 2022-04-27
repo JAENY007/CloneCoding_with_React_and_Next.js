@@ -3,32 +3,25 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Card from './card';
 import MiniCard from './miniCard';
+import __testMiniCardParameter from '../../../../app.modules/__tests__/__testMiniCardParameter';
+import __testNormalCardParameter from '../../../../app.modules/__tests__/__testNormalCardParameter';
 
 const groupPage = (props) => {
   const printCard = () => {
     if (props.title === '내가 가입한 그룹') {
       return (
         <div className="flex-nowrap">
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
-          <MiniCard />
+          {__testMiniCardParameter.map((item, itemIdx) => {
+            return <MiniCard {...item} />;
+          })}
         </div>
       );
     } else {
       return (
         <div className="flex-wrap">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {__testNormalCardParameter.map((item, itemIdx) => {
+            return <Card {...item} />;
+          })}
         </div>
       );
     }

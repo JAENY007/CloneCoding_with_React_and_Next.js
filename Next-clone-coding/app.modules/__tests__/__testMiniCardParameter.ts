@@ -1,4 +1,4 @@
-const __testNormalCardParameter = [
+const __testMiniCardParameter = [
   {
     id: 1,
     link: "/1",
@@ -78,4 +78,4 @@ const __testNormalCardParameter = [
   }
 ];
 
-export default __testNormalCardParameter;
+export default __testMiniCardParameter;
