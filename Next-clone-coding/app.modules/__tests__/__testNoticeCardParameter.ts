@@ -11,7 +11,7 @@ const __testNoticeCardParameter = [
   },
   {
     id: 2,
-    attachedImageSrc: 'http://placeimg.com/720/540/animals',
+    attachedImageSrc: 'http://placeimg.com/720/540/arch',
     accountImageSrc: "https://cashwalk.com/img/kr/cashwalk-symbol-20-color.png",
     userId: "CASHWALK",
     subject: "소식",
@@ -22,7 +22,7 @@ const __testNoticeCardParameter = [
   {
     id: 3,
     attachedImageSrc: 'http://placeimg.com/720/540/animals/sepia',
-    accountImageSrc: "http://placeimg.com/300/300/animals/grayscale",
+    accountImageSrc: "http://placeimg.com/300/300/arch/grayscale",
     userId: "SCH_123",
     subject: "일반",
     createdDate: 0,

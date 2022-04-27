@@ -1,11 +1,19 @@
 import { NextPage } from 'next';
 import styled, { css } from 'styled-components';
+import { useState } from 'react';
 
 const ShortenInfo = (props) => {
+  const [subject, setSubject] = useState('');
   return (
     <StyledWrapper>
-      <span className="info-icon">{props.subject}</span>
-      {/* <span className={props.subject === "공지" ? : "info-icon"}>{props.subject}</span> */}
+      {/* <span className="info-icon">{props.subject}</span> */}
+      <span
+        className={
+          props.subject === '공지' ? 'info-icon notice' : 'info-icon normal'
+        }
+      >
+        {props.subject}
+      </span>
       <span className="created-date">{props.createdDate}일 전</span>
     </StyledWrapper>
   );
@@ -23,12 +31,17 @@ const StyledWrapper = styled.div`
     width: 35px;
     line-height: 20px;
     display: inline-block;
-    background: #ff3352;
     /* background: ${'공지' ? '#ff3352' : '#007840'}; */
     color: white;
     font-weight: bold;
     border-radius: 5px;
     padding: 0 2px 0 2px;
+  }
+  .notice {
+    background: #ff3352;
+  }
+  .normal {
+    background: #6656cd;
   }
   .created-date {
     display: inline-block;

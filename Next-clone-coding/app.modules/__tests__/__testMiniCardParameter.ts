@@ -9,7 +9,7 @@ const __testMiniCardParameter = [
   {
     id: 2,
     link: "/2",
-    imageSrc: "http://placeimg.com/300/300/architecture",
+    imageSrc: "http://placeimg.com/300/300/arch",
     title: "QA__가나다라마바사__리워드_NEED",
     number: 61
   },
@@ -51,7 +51,7 @@ const __testMiniCardParameter = [
   {
     id: 8,
     link: "/8",
-    imageSrc: "http://placeimg.com/300/300/architecture",
+    imageSrc: "http://placeimg.com/300/300/arch",
     title: "QA_123456789_안녕하세요",
     number: 605
   },
