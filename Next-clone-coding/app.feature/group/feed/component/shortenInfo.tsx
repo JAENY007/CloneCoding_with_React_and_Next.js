@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const ShortenInfo = () => {
   return (
     <StyledWrapper>
-      <span className="InfoIcon">공지</span>
-      <span className="CreatedDate">1일 전</span>
+      <span className="info-icon">공지</span>
+      <span className="created-date">1일 전</span>
     </StyledWrapper>
   );
 };
@@ -18,7 +18,7 @@ const StyledWrapper = styled.div`
   display: inline;
   float: right;
   padding: 0 20px 0 0;
-  .InfoIcon {
+  .info-icon {
     width: 35px;
     line-height: 20px;
     display: inline-block;
@@ -28,7 +28,7 @@ const StyledWrapper = styled.div`
     border-radius: 5px;
     padding: 0 2px 0 2px;
   }
-  .CreatedDate {
+  .created-date {
     display: inline-block;
     color: #c2c2c2;
     font-weight: bold;

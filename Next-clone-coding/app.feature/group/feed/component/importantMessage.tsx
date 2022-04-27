@@ -28,6 +28,6 @@ const StyledWrapper = styled.div`
   }
 
   span {
-    font-weight: bold;
+    font-weight: 500;
   }
 `;
