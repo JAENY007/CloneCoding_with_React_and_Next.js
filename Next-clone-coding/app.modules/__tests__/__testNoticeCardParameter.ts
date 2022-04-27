@@ -1,4 +1,4 @@
-const __testCardParameter = [
+const __testNoticeCardParameter = [
   {
     id: 1,
     link: "/1",
@@ -78,4 +78,4 @@ const __testCardParameter = [
   }
 ];
 
-export default __testCardParameter;
+export default __testNoticeCardParameter;
