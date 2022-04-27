@@ -11,7 +11,7 @@ const SearchBar = () => {
     setSearchValue(event.target.value);
   };
 
-  let groupNumber = null;
+  let groupNumber;
 
   return (
     <StyledWrapper>
@@ -21,7 +21,7 @@ const SearchBar = () => {
         onChange={handleInputChange}
         placeholder={`총 ${groupNumber}개의 그룹이 개설되어 있습니다.`}
       ></input>
-      <button>
+      <button type="submit">
         <FontAwesomeIcon icon={faMagnifyingGlass} />
       </button>
     </StyledWrapper>

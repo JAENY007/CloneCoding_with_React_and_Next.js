@@ -34,13 +34,16 @@ const groupPage = (props) => {
     }
   };
 
+  const Classification =
+    props.title === '내가 가입한 그룹' ? (
+      <Link href="/joinedgroup">더보기</Link>
+    ) : null;
+
   return (
     <StyledWrapper>
       <header>
         <h1>{props.title}</h1>
-        {props.title === '내가 가입한 그룹' ? (
-          <Link href="/joinedgroup">더보기</Link>
-        ) : null}
+        {Classification}
       </header>
       {printCard()}
     </StyledWrapper>
