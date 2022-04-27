@@ -9,13 +9,16 @@ const NoticeCard = (props) => {
   return (
     <StyledWrapper>
       <div className="ImageBox">
-        <img src={props.imageSrc} />
+        <img src={props.attachedImageSrc} />
       </div>
       <div className="InfoBox">
-        <AccountInfo />
-        <ShortenInfo />
+        <AccountInfo
+          accountImageSrc={props.accountImageSrc}
+          userId={props.userId}
+        />
+        <ShortenInfo subject={props.subject} createdDate={props.createdDate} />
       </div>
-      <NoticeText />
+      <NoticeText title={props.title} text={props.text} />
       <ImportantMessage />
     </StyledWrapper>
   );

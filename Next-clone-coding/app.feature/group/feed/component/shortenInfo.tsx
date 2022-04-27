@@ -1,11 +1,12 @@
 import { NextPage } from 'next';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const ShortenInfo = () => {
+const ShortenInfo = (props) => {
   return (
     <StyledWrapper>
-      <span className="info-icon">공지</span>
-      <span className="created-date">1일 전</span>
+      <span className="info-icon">{props.subject}</span>
+      {/* <span className={props.subject === "공지" ? : "info-icon"}>{props.subject}</span> */}
+      <span className="created-date">{props.createdDate}일 전</span>
     </StyledWrapper>
   );
 };
@@ -23,6 +24,7 @@ const StyledWrapper = styled.div`
     line-height: 20px;
     display: inline-block;
     background: #ff3352;
+    /* background: ${'공지' ? '#ff3352' : '#007840'}; */
     color: white;
     font-weight: bold;
     border-radius: 5px;

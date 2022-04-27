@@ -1,81 +1,44 @@
 const __testNoticeCardParameter = [
   {
     id: 1,
-    link: "/1",
-    imageSrc: "http://placeimg.com/300/300/animals",
-    title: "QA_리워드형그룹_그룹_가나다라마바사",
-    number: 0
+    attachedImageSrc: 'http://placeimg.com/720/540/tech',
+    accountImageSrc: "https://cashwalk.com/img/kr/cashwalk-symbol-20-color.png",
+    userId: "CASHWALK",
+    subject: "공지",
+    createdDate: 1,
+    title: "중요공지 전달드립니다",
+    text: "이것은 테스트이기 때문에 오해하지 않으시길 바랍니다, 테스트가 길어지고 있습니다아",
   },
   {
     id: 2,
-    link: "/2",
-    imageSrc: "http://placeimg.com/300/300/architecture",
-    title: "QA__가나다라마바사__리워드_NEED",
-    number: 61
+    attachedImageSrc: 'http://placeimg.com/720/540/animals',
+    accountImageSrc: "https://cashwalk.com/img/kr/cashwalk-symbol-20-color.png",
+    userId: "CASHWALK",
+    subject: "소식",
+    createdDate: 3,
+    title: "123_기쁜 소식을 전달해드려요!",
+    text: "12345678910_퍼블리싱 미션이 완성되어 갑니다",
   },
   {
     id: 3,
-    link: "/3",
-    imageSrc: "http://placeimg.com/300/300/nature",
-    title: "QA_ABCDEFG_IIIIIIIVVVIVII",
-    number: 3
+    attachedImageSrc: 'http://placeimg.com/720/540/animals/sepia',
+    accountImageSrc: "http://placeimg.com/300/300/animals/grayscale",
+    userId: "SCH_123",
+    subject: "일반",
+    createdDate: 0,
+    title: "안녕하세요 처음뵙겠습니다",
+    text: "my name is max! nice to meet you. i dont want introduce myself. i want to just stay here",
   },
   {
     id: 4,
-    link: "/4",
-    imageSrc: "http://placeimg.com/300/300/people",
-    title: "QA_123456789_안녕하세요",
-    number: 5
+    attachedImageSrc: 'http://placeimg.com/720/540/people',
+    accountImageSrc: "http://placeimg.com/300/300/animals",
+    userId: "Jaeny007",
+    subject: "일반",
+    createdDate: 14,
+    title: "Hello World! Hello JavaScript, Hello React, Hello Next... HeadAche",
+    text: "AnnyeongHASeyo, Jaeny immida. Jal Bu tak dE rim mi da",
   },
-  {
-    id: 5,
-    link: "/5",
-    imageSrc: "http://placeimg.com/300/300/tech",
-    title: "QA_리워드형그룹_그룹_가나다라마바사",
-    number: 6
-  },
-  {
-    id: 6,
-    link: "/6",
-    imageSrc: "http://placeimg.com/300/300/any",
-    title: "QA__가나다라마바사__리워드_NEED",
-    number: 75
-  },
-  {
-    id: 7,
-    link: "/7",
-    imageSrc: "http://placeimg.com/300/300/animals",
-    title: "QA_ABCDEFG_IIIIIIIVVVIVII",
-    number: 9
-  },
-  {
-    id: 8,
-    link: "/8",
-    imageSrc: "http://placeimg.com/300/300/architecture",
-    title: "QA_123456789_안녕하세요",
-    number: 605
-  },
-  {
-    id: 9,
-    link: "/9",
-    imageSrc: "http://placeimg.com/300/300/nature",
-    title: "QA_리워드형그룹_그룹_가나다라마바사",
-    number: 100
-  },
-  {
-    id: 10,
-    link: "/10",
-    imageSrc: "http://placeimg.com/300/300/people",
-    title: "QA__가나다라마바사__리워드_NEED",
-    number: 16452
-  },
-  {
-    id: 11,
-    link: "/11",
-    imageSrc: "http://placeimg.com/300/300/tech",
-    title: "QA_ABCDEFG_IIIIIIIVVVIVII",
-    number: 123132513
-  }
 ];
 
 export default __testNoticeCardParameter;

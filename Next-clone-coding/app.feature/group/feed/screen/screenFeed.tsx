@@ -3,23 +3,15 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import FilterBar from '../component/filterBar';
 import NoticeCard from '../component/noticeCard';
+import __testNoticeCardParameter from '../../../../app.modules/__tests__/__testNoticeCardParameter';
 
 const ScreenFeed = () => {
-  const ImageSrcAddress = [
-    {
-      id: 1,
-      ImageSrcAddress: 'http://placeimg.com/720/540/tech',
-    },
-    {
-      id: 2,
-      ImageSrcAddress: 'http://placeimg.com/720/540/any',
-    },
-  ];
   return (
     <div>
       <FilterBar />
-      <NoticeCard imageSrc={ImageSrcAddress[0].ImageSrcAddress} />
-      <NoticeCard imageSrc={ImageSrcAddress[1].ImageSrcAddress} />
+      {__testNoticeCardParameter.map((item, itemIdx) => {
+        return <NoticeCard {...item} />;
+      })}
     </div>
   );
 };

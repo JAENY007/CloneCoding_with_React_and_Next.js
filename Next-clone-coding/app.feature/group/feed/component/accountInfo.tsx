@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 import styled from 'styled-components';
 
-const AccountInfo = () => {
+const AccountInfo = (props) => {
   return (
     <StyledWrapper>
-      <img src="https://cashwalk.com/img/kr/cashwalk-symbol-20-color.png" />
-      <span>CASHWALK</span>
+      <img src={props.accountImageSrc} />
+      <span>{props.userId}</span>
     </StyledWrapper>
   );
 };
@@ -20,7 +20,7 @@ const StyledWrapper = styled.div`
 
   img {
     width: 35px;
-    padding: 5px;
+    padding: 0;
     background: #ffc430;
     border: none;
     border-radius: 20px;

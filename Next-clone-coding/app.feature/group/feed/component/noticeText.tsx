@@ -1,14 +1,11 @@
 import { NextPage } from 'next';
 import styled from 'styled-components';
 
-const NoticeText = () => {
+const NoticeText = (props) => {
   return (
     <StyledWrapper>
-      <h1>전체공지입니다</h1>
-      <span>
-        텍스트 크기 14 / 텍스트 크기 18 / cashwalk.io / notion.so / github.com /
-        ABCDEFGHIJKLMNOP
-      </span>
+      <h1>{props.title}</h1>
+      <span>{props.text}</span>
     </StyledWrapper>
   );
 };
